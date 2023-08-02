@@ -232,6 +232,7 @@
     margin-bottom: 12px;
     display: flex;
     justify-content: start;
+    padding-left: 19px;
 }
 
 .radio-control {
@@ -288,6 +289,10 @@
     padding-left: 19px;
     text-decoration: none;
     outline: none;
+    resize: none;
+    padding-top: 21px;
+    padding-left: 19px;
+    
 }
 
 .field-textarea:focus {
@@ -400,7 +405,7 @@
     justify-content: center;
     align-items: end;
     box-sizing: border-box;
-    width: 414px;
+    width: 100%;
     /*при масштабировании картинки не масштабируются*/
     height: 319px;
     background-color: #eff6f1;
