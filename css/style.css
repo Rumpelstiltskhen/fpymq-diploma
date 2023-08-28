@@ -28,7 +28,7 @@
     font-weight: 700;
     text-align: center;
     position: relative;
-    padding-top: 50px;
+    margin-top: 15px;
 }
 
 .title:after {
@@ -38,7 +38,7 @@
     height: 3px;
     background: #b59f5b;
     position: absolut;
-    margin: 10px auto 28px;
+    margin: 7px auto 0;
     opacity: 0.400;
 }
 
@@ -72,14 +72,13 @@
 .post {
     display: flex;
     align-items: flex-start;
-    margin-top: 60px;
+    margin-top: 20px;
     /*картинка и статья в линию*/
 }
 
 .post-date {
     display: block;
     margin-right: 15px;
-    opacity: 0.22;
     font-size: 12px;
     color: #888888;
     font-weight: 400;
@@ -92,7 +91,10 @@
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
+    box-sizing: border-box;
+    max-height: 150px;
+    display: flex;
 }
 
 .posts-title:hover {
@@ -111,7 +113,6 @@
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
     height: 70px;
 }
 
@@ -132,16 +133,20 @@
     background-color: #b59f5b;
     border: none;
     box-sizing: border-box;
-    margin-top: 15px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     padding: 19px 82px 15px 83px;
+}
+
+.aside-submit {
+    margin-top: 15px;
 }
 
 .submit-button:hover {
     background-color: #323232;
 }
 
-.popup__submit-button {
+.popup-submit {
     width: 330px;
 }
 
@@ -165,7 +170,7 @@
 /* стили страницы */
 .page-elements {
     font-family: "opensans", "arial", "sans-serif";
-    width: 1660px;
+    /* width: 1660px; */
 }
 
 /* popup */
@@ -178,7 +183,6 @@
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 5;
     background-color: rgba(0, 0, 0, 0.6);
     overflow-y: auto;
     z-index: 5;
@@ -194,9 +198,7 @@
     background: #fff;
     position: relative;
     width: 390px;
-    height: 589px;
-    padding: 20px;
-    padding-left: 30px;
+    padding: 30px 0 15px 30px;
     box-sizing: border-box;
     justify-content: center;
 }
@@ -235,8 +237,8 @@
     font-size: 13px;
     font-weight: 400;
     text-align: left;
-    margin-top: 32px;
-    margin-bottom: 12px;
+    margin-top: 25px;
+    margin-bottom: 9px;
     display: flex;
     justify-content: start;
 }
@@ -246,13 +248,13 @@
     /*убирает кружочек, который нельзя изменить*/
 }
 
-.radio-group__text::before {
+.radio-text::before {
     vertical-align: middle;
     display: inline-block;
     margin-right: 8px;
     content: '';
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     border: 1px solid #b59f5b;
     border-radius: 50%;
 }
@@ -263,16 +265,15 @@
 }
 
 .radio-group:nth-of-type(n+2) {
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
-.radio-control:checked+.radio-group__text::before {
+.radio-control:checked+.radio-text::before {
     background-image: url("../svg/form-circle.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     border: 0;
-    background-size: 15px;
 }
 
 .choise-button {
@@ -304,16 +305,16 @@
     outline: none;
 }
 
-.popup__close {
+.popup-close {
     position: absolute;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     right: -4px;
-    top: -50px;
+    top: -65px;
     cursor: pointer;
 }
 
-.popup__close:hover {
+.popup-close:hover {
     color: lightgray;
 }
 
@@ -327,8 +328,9 @@
     position: relative;
     z-index: 0;
     padding-top: 24px;
-    width: 1660px;
-    height: 360px;
+    /* width: 1660px; */
+    height: 450px;
+    margin-bottom: 55px;
 }
 
 .header::after {
@@ -395,7 +397,7 @@
     text-align: center;
     margin: auto;
     padding-top: 128px;
-    padding-bottom: 144px;
+    /* padding-bottom: 144px; */
 }
 
 /* Тренды */
@@ -403,6 +405,8 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 /*нужно масштабировать картинки*/
@@ -414,7 +418,6 @@
     width: 100%;
     /*при масштабировании картинки не масштабируются*/
     height: 319px;
-    background-color: #eff6f1;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -438,30 +441,32 @@
     margin-left: 5px;
 }
 
-.trends__cover1 {
+.trends-cover1 {
     background-image: url("../images/trend1.jpg");
 }
 
-.trends__cover2 {
+.trends-cover2 {
     background-image: url("../images/trend2.jpg");
 }
 
-.trends__cover3 {
+.trends-cover3 {
     background-image: url("../images/trend3.jpg");
 }
 
-.trends__cover4 {
+.trends-cover4 {
     background-image: url("../images/trend4.jpg");
 }
 
 .trends-container {
     position: relative;
-    box-sizing: content-box;
+    box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0);
     border: 3px solid #b59f5b;
     z-index: 1;
-    margin: 0 5% 5%;
-    padding: 10%;
+    margin: 5%;
+    padding: 5%;
+    padding-top: 10%;
+    max-height: 319px;
 }
 
 /*основные статьи*/
@@ -471,7 +476,7 @@
     flex-wrap: nowrap;
     width: 1200px;
     margin: auto;
-    padding: 64px 15px 0;
+    padding: 40px 15px 60px;
     background-color: #ffffff;
     justify-content: space-between;
 }
@@ -510,6 +515,10 @@
     margin-top: 35px;
 }
 
+.mainpost-margin {
+    margin-top: 55px;
+}
+
 /* сбоку */
 .sidebar {
     display: flex;
@@ -523,26 +532,26 @@
     background-color: #f4f7f6;
 }
 
-.sidebar__aside {
-    margin-top: 20px;
-}
-
-.post__title-aside {
+.title-aside {
     width: 180px;
     font-size: 14px;
     line-height: 18px;
     color: #000000;
 }
 
-.post__title-aside:hover {
+.title-aside:hover {
     color: #b59f5b;
     cursor: pointer;
 }
 
+.sidepost-margin {
+    margin-top: 30px;
+}
+
 /* кнопки */
 .search {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 68px;
+    margin-bottom: 40px;
     display: flex;
     width: 100%;
 }
@@ -580,6 +589,9 @@
 }
 
 /* email */
+.email {
+    margin-top: 30px;
+}
 .email-field {
     width: 270px;
     height: 48px;
@@ -604,7 +616,8 @@
     display: flex;
     gap: 6px;
     list-style-type: none;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     align-items: center;
 }
 
@@ -631,8 +644,9 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 11px;
     align-items: flex-start;
+    margin-top: 25px;
 }
 
 .topic-list {
@@ -663,7 +677,7 @@
 
 /* товары */
 .footer-box {
-    margin: auto;
+    margin: 30px auto 0;
     width: 1170px;
 }
 
@@ -801,7 +815,8 @@
     padding: 30px 0;
     gap: 30px;
     align-items: flex-start;
-    width: 1170px;
+    width: 1130px;
+    margin-left: 20px;
 }
 
 .social-list {
