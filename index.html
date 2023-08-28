@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="ru">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,13 @@
 
     <!-- popup -->
     <input type="checkbox" hidden id="popup1" class="popup-toggle" checked>
-    <div class="popup">
+    <form class="popup">
         <div class="popup-content">
-            <label for="popup1" class="popup__close">&times;</label>
+            <label for="popup1" class="popup-close">&times;</label>
             <h2 class="title title-font">Ваш фидбек</h2>
 
             <!-- выпадающий список -->
-            <form class="select-group">
+            <label class="select-group">
                 <span class="form-hint">Как часто вы заходите на сайт?</span>
                 <select class="select">
                     <option>Почти каждый день</option>
@@ -26,29 +26,29 @@
                     <option>Раз в несколько недель</option>
                     <option>Раз в год</option>
                 </select>
-            </form>
+            </label>
 
             <span class="form-hint">Вы подписаны на email рассылку?</span>
             <div class="choise-button">
                 <label class="radio-group">
                     <input type="radio" name="yes/no" class="radio-control" checked>
-                    <span class="radio-group__text">да</span>
+                    <span class="radio-text">да</span>
                 </label>
                 <label class="radio-group">
                     <input type="radio" name="yes/no" class="radio-control">
-                    <span class="radio-group__text">нет</span>
+                    <span class="radio-text">нет</span>
                 </label>
             </div>
 
-            <form class="form-field">
+            <label class="form-field">
                 <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
                 <textarea class="field-textarea" placeholder="Может, больше рецептов?"></textarea>
-            </form>
+            </label>
 
-            <button class="submit-button popup__submit-button">Отправить</button>
+            <button class="submit-button popup-submit">Отправить</button>
 
         </div>
-    </div>
+    </form>
 
     <header class="header">
         <div class="header-container">
@@ -82,7 +82,7 @@
     <!-- тренды -->
     <h2 class="title title-font">Сейчас в тренде</h2>
     <div class="trends">
-        <article class="trends-card trends__cover1">
+        <article class="trends-card trends-cover1">
             <div class="trends-container">
                 <div class="trends-menu">
                     <ul class="categories">
@@ -94,11 +94,13 @@
                         </li>
                     </ul>
                 </div>
-                <a class="posts-title" href="#0"><h4>Сейчас в тренде: сад на подоконнике</h4></a>
+                <a class="posts-title" href="#0">
+                    <h4>Сейчас в тренде: сад на подоконнике</h4>
+                </a>
             </div>
         </article>
 
-        <article class="trends-card trends__cover2">
+        <article class="trends-card trends-cover2">
             <div class="trends-container">
                 <div class="trends-menu">
                     <ul class="categories">
@@ -106,12 +108,14 @@
                             <a class="category-link" href="#0">Food</a>
                         </li>
                     </ul>
-                </div>                
-                <a class="posts-title" href="#0"><h4>Сыры на красивых картинках из интернета: какие они на вкус?</h4></a>
+                </div>
+                <a class="posts-title" href="#0">
+                    <h4>Сыры на красивых картинках из интернета: какие они на вкус?</h4>
+                </a>
             </div>
         </article>
 
-        <article class="trends-card trends__cover3">
+        <article class="trends-card trends-cover3">
             <div class="trends-container">
                 <div class="trends-menu">
                     <ul class="categories">
@@ -124,11 +128,13 @@
                     </ul>
                 </div>
 
-                <a class="posts-title" href="#0"><h4>Собираемся в первый поход в горы</h4></a>
+                <a class="posts-title" href="#0">
+                    <h4>Собираемся в первый поход в горы</h4>
+                </a>
             </div>
         </article>
 
-        <article class="trends-card trends__cover4">
+        <article class="trends-card trends-cover4">
             <div class="trends-container">
                 <div class="trends-menu">
                     <ul class="categories">
@@ -141,7 +147,9 @@
                     </ul>
                 </div>
 
-                <a class="posts-title" href="#0"><h4>Сейчас в тренде: сколько витамина С в лимонах?</h4></a>
+                <a class="posts-title" href="#0">
+                    <h4>Сейчас в тренде: сколько витамина С в лимонах?</h4>
+                </a>
             </div>
         </article>
     </div>
@@ -163,8 +171,10 @@
 
 
                     <article class="post-article">
-                        <a class="posts-title" href="#0"><h4 class="title-blackfont">10 мест, ради которых стоит проснуться на
-                            рассвете</h4></a>
+                        <a class="posts-title" href="#0">
+                            <h4 class="title-blackfont">10 мест, ради которых стоит проснуться на
+                                рассвете</h4>
+                        </a>
                         <div class="post-header">
                             <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
                             <span class="autor">Неизвестный автор</span>
@@ -178,7 +188,7 @@
                 </div>
             </div>
 
-            <div class="post">
+            <div class="post mainpost-margin">
                 <img src="images/last-post2.jpg" class="post-img" alt="йога">
                 <div class="article-box">
                     <ul class="categories">
@@ -191,8 +201,10 @@
                     </ul>
 
                     <article class="post-article">
-                        <a class="posts-title" href="#0"><h4 class="title-blackfont">Йога для начинающих в домашних
-                            условиях</h4></a>
+                        <a class="posts-title" href="#0">
+                            <h4 class="title-blackfont">Йога для начинающих в домашних
+                                условиях</h4>
+                        </a>
                         <div class="post-header">
                             <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
                             <span class="autor">Неизвестный автор</span>
@@ -205,7 +217,7 @@
                 </div>
             </div>
 
-            <div class="post">
+            <div class="post mainpost-margin">
                 <img src="images/last-post3.jpg" class="post-img" alt="девушка">
                 <div class="article-box">
                     <ul class="categories">
@@ -215,8 +227,10 @@
                     </ul>
 
                     <article class="post-article">
-                        <a class="posts-title" href="#0"><h4 class="title-blackfont">Лучшие музыкальные фестивали этого
-                            лета</h4></a>
+                        <a class="posts-title" href="#0">
+                            <h4 class="title-blackfont">Лучшие музыкальные фестивали этого
+                                лета</h4>
+                        </a>
                         <div class="post-header">
                             <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
                             <span class="autor">Неизвестный автор</span>
@@ -230,7 +244,7 @@
                 </div>
             </div>
 
-            <div class="post">
+            <div class="post mainpost-margin">
                 <img src="images/last-post4.jpg" class="post-img" alt="сервированный стол">
                 <div class="article-box">
                     <ul class="categories">
@@ -243,7 +257,9 @@
                     </ul>
 
                     <article class="post-article">
-                        <a class="posts-title" href="#0"><h4 class="title-blackfont">Наукоемкий подход к кулинарии</h4></a>
+                        <a class="posts-title" href="#0">
+                            <h4 class="title-blackfont">Наукоемкий подход к кулинарии</h4>
+                        </a>
                         <div class="post-header">
                             <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
                             <span class="autor">Неизвестный автор</span>
@@ -256,7 +272,7 @@
                 </div>
             </div>
 
-            <div class="post">
+            <div class="post mainpost-margin">
                 <img src="images/last-post5.jpg" class="post-img" alt="подушечка">
                 <div class="article-box">
                     <ul class="categories">
@@ -272,8 +288,10 @@
                     </ul>
 
                     <article class="post-article">
-                        <a class="posts-title" href="#0"><h4 class="title-blackfont">Делаем модные принты на подушках для
-                            интерьера</h4></a>
+                        <a class="posts-title" href="#0">
+                            <h4 class="title-blackfont">Делаем модные принты на подушках для
+                                интерьера</h4>
+                        </a>
                         <div class="post-header">
                             <time class="post-date" datetime="2019-06-10">10 июня 2019 </time>
                             <span class="autor">Неизвестный автор</span>
@@ -289,45 +307,55 @@
         </main>
 
         <!-- с боку -->
-        <div class="sidebar">
+        <aside class="sidebar">
             <h3 class="title">Новые посты</h3>
-            <div class="post sidebar__aside">
+            <div class="post sidepost-margin">
                 <img src="images/2.jpg" class="aside-img" alt="пляж">
                 <article class="article-box">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <a class="posts-title"><h5 class="post__title-aside">10 мест, ради которых стоит проснуться</h5></a>
+                    <a class="posts-title">
+                        <h5 class="title-aside">10 мест, ради которых стоит проснуться</h5>
+                    </a>
                 </article>
             </div>
 
-            <div class="post sidebar__aside">
+            <div class="post">
                 <img src="images/151.jpg" class="aside-img" alt="йога">
                 <article class="article-box">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <a class="posts-title"><h5 class="post__title-aside">Йога для домашних</h5></a>
+                    <a class="posts-title">
+                        <h5 class="title-aside">Йога для домашних</h5>
+                    </a>
                 </article>
             </div>
 
-            <div class="post sidebar__aside">
+            <div class="post">
                 <img src="images/45.jpg" class="aside-img" alt="комната">
                 <article class="article-box">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <a class="posts-title"><h5 class="post__title-aside">Как мы превратили классное место в балкон</h5></a>
+                    <a class="posts-title">
+                        <h5 class="title-aside">Как мы превратили классное место в балкон</h5>
+                    </a>
                 </article>
             </div>
 
-            <div class="post sidebar__aside">
+            <div class="post">
                 <img src="images/501.jpg" class="aside-img" alt="кухня">
                 <article class="article-box">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <a class="posts-title"><h5 class="post__title-aside">Кулинарный подход к науке</h5></a>
+                    <a class="posts-title">
+                        <h5 class="title-aside">Кулинарный подход к науке</h5>
+                    </a>
                 </article>
             </div>
 
-            <div class="post sidebar__aside">
+            <div class="post">
                 <img src="images/7.jpg" class="aside-img" alt="прическа">
                 <article class="article-box">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <a class="posts-title"><h5 class="post__title-aside">Лучшие прически для распущеных волос</h5></a>
+                    <a class="posts-title">
+                        <h5 class="title-aside">Лучшие прически для распущеных волос</h5>
+                    </a>
                 </article>
             </div>
 
@@ -347,37 +375,37 @@
                     <span class="visually-hidden">ваша почта</span>
                     <input class="email-field" placeholder="ваш email-адрес">
                 </label>
-                <button class="submit-button">Подписаться</button>
+                <button class="submit-button aside-submit">Подписаться</button>
             </form>
 
             <!-- Теги -->
             <h3 class="title">Теги</h3>
-                <ul class="tag">
-                    <li class="tag-list">
-                        <a class="tag-link" href="#home">Fashion</a>
-                    </li>
-                    <li class="tag-list">
-                        <a class="tag-link" href="#0">Music</a>
-                    </li>
-                    <li class="tag-list">
-                        <a class="tag-link" href="#0">Lifestyle</a>
-                    </li>
-                    <li class="tag-list">
-                        <a class="tag-link" href="#0">Art</a>
-                    </li>
-                    <li class="tag-list">
-                        <a class="tag-link" href="#0">Interior</a>
-                    </li>
-                    <li class="tag-list">
-                        <a class="tag-link" href="#0">Travel</a>
-                    </li>
-                    <li class="tag-list">
-                        <a class="tag-link" href="#0">Food</a>
-                    </li>
-                    <li class="tag-list">
-                        <a class="tag-link" href="#0">Health</a>
-                    </li>
-                </ul>
+            <ul class="tag">
+                <li class="tag-list">
+                    <a class="tag-link" href="#home">Fashion</a>
+                </li>
+                <li class="tag-list">
+                    <a class="tag-link" href="#0">Music</a>
+                </li>
+                <li class="tag-list">
+                    <a class="tag-link" href="#0">Lifestyle</a>
+                </li>
+                <li class="tag-list">
+                    <a class="tag-link" href="#0">Art</a>
+                </li>
+                <li class="tag-list">
+                    <a class="tag-link" href="#0">Interior</a>
+                </li>
+                <li class="tag-list">
+                    <a class="tag-link" href="#0">Travel</a>
+                </li>
+                <li class="tag-list">
+                    <a class="tag-link" href="#0">Food</a>
+                </li>
+                <li class="tag-list">
+                    <a class="tag-link" href="#0">Health</a>
+                </li>
+            </ul>
 
             <!-- список по темам -->
             <h3 class="title">Темы</h3>
@@ -393,11 +421,11 @@
                 <li class="topic-list"><a class="topic-link" href="#0">Спорт</a><span class="numbers">62</span></li>
                 <li class="topic-list"><a class="topic-link" href="#0">Йога</a><span class="numbers">8</span></li>
             </ul>
-        </div>
+        </aside>
     </div>
 
     <!-- наши изделия -->
-    <h3 class="title">Наши изделия</h3>
+    <h2 class="title title-font">Наши изделия</h2>
     <div class="footer-box">
         <div class="products">
             <article class="product-box">
@@ -459,21 +487,19 @@
                             <button class="product-button" type="button">В Магазин</button>
                         </div>
                     </div>
-                </div>                
+                </div>
             </article>
         </div>
 
         <footer class="footer">
-            <adress class="articles-social">
-                <ul class="social">
-                    <li class="social-list"><a class="social-link social-link-dribbble" href="#0"></a><span
-                            class="visually-hidden">профиль dribbble </span></li>
-                    <li class="social-list"><a class="social-link social-link-pinterest" href="#0"></a><span
-                            class="visually-hidden">профиль pinterest</span></li>
-                    <li class="social-list"><a class="social-link social-link-tumblr" href="#0"></a><span
-                            class="visually-hidden">профиль tumblr</span></li>
-                </ul>
-            </adress>
+            <ul class="social">
+                <li class="social-list"><a class="social-link social-link-dribbble" href="#0"></a><span
+                        class="visually-hidden">профиль dribbble </span></li>
+                <li class="social-list"><a class="social-link social-link-pinterest" href="#0"></a><span
+                        class="visually-hidden">профиль pinterest</span></li>
+                <li class="social-list"><a class="social-link social-link-tumblr" href="#0"></a><span
+                        class="visually-hidden">профиль tumblr</span></li>
+            </ul>
             <p class="copyright">Copyright © 2009–2019 City Blog LLC.</p>
         </footer>
     </div>
