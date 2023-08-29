@@ -95,6 +95,7 @@
     box-sizing: border-box;
     max-height: 150px;
     display: flex;
+    overflow: hidden;
 }
 
 .posts-title:hover {
@@ -397,6 +398,7 @@
     text-align: center;
     margin: auto;
     padding-top: 128px;
+    overflow: hidden;
     /* padding-bottom: 144px; */
 }
 
@@ -513,6 +515,7 @@
     color: #0f0d0e;
     font-weight: 400;
     margin-top: 35px;
+    overflow: hidden;
 }
 
 .mainpost-margin {
@@ -730,6 +733,7 @@
     color: #0f0d0e;
     font-weight: 400;
     text-align: start;
+    overflow: hidden;
 }
 
 .product-link {
@@ -816,7 +820,9 @@
     gap: 30px;
     align-items: flex-start;
     width: 1130px;
+    height: 83px;
     margin-left: 20px;
+    overflow: hidden;
 }
 
 .social-list {
@@ -851,4 +857,5 @@
     margin-top: 67px;
     text-align: center;
     padding: 0 0 40px;
+    overflow: hidden;
 }
