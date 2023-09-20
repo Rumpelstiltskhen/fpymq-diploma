@@ -29,6 +29,7 @@
     text-align: center;
     position: relative;
     margin-top: 15px;
+    margin-left: 2px;
 }
 
 .title:after {
@@ -44,6 +45,11 @@
 
 .title-font {
     font-size: 20px;
+}
+
+.title-margin {
+    margin-left: 0;
+    margin-right: 3px;
 }
 
 .categories {
@@ -93,10 +99,11 @@
     font-weight: 700;
     /* margin-bottom: 35px; */
     box-sizing: border-box;
-    max-height: 150px;
+    /* max-height: 150px; */
     display: flex;
-    overflow: hidden;
-}
+    padding-right: 30px;
+    margin-top: 5px;
+    }
 
 .posts-title:hover {
     color: #b59f5b;
@@ -115,6 +122,12 @@
     display: flex;
     flex-direction: column;
     height: 70px;
+    margin-top: -5px;
+    height: fit-content;
+}
+
+.articlebox-aside {
+    margin-left: 20px;
 }
 
 .visually-hidden {
@@ -135,12 +148,12 @@
     border: none;
     box-sizing: border-box;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     padding: 19px 82px 15px 83px;
 }
 
 .aside-submit {
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
 .submit-button:hover {
@@ -151,22 +164,7 @@
     width: 330px;
 }
 
-.field {
-    background-color: #f4f7f6;
-    border: none;
-    box-sizing: border-box;
-    padding-left: 17px;
-    width: 222px;
-    height: 48px;
-    font-size: 13px;
-}
 
-.field:focus {
-    border: 1px solid #b59f5b;
-    outline: none;
-    width: 222px;
-    height: 48px;
-}
 
 /* стили страницы */
 .page-elements {
@@ -328,7 +326,7 @@
     background-color: #000000;
     position: relative;
     z-index: 0;
-    padding-top: 24px;
+    padding-top: 28px;
     /* width: 1660px; */
     height: 450px;
     margin-bottom: 55px;
@@ -349,13 +347,16 @@
 .logo {
     width: 180px;
     height: 35px;
-    justify-content: space-betweeen;
+}
+
+.burger-menu {
+    display: none;
 }
 
 .menu-list {
     display: flex;
     list-style-type: none;
-    margin-top: 0;
+    margin-top: 1px;
     margin-bottom: 0;
     padding-left: 0;
 }
@@ -367,11 +368,10 @@
 .header-container {
     display: flex;
     align-items: center;
-    width: 1170px;
-    /* padding: 0 15px; */
+    max-width: 1170px;
     justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 14.8%;
+    margin-left: 15%;
 }
 
 .menu-link {
@@ -388,7 +388,7 @@
 }
 
 .header-title {
-    width: 679px;
+    max-width: 700px;
     display: flex;
     font-size: 45px;
     line-height: 1.6;
@@ -397,7 +397,8 @@
     font-weight: 700;
     text-align: center;
     margin: auto;
-    padding-top: 128px;
+    padding-top: 6.6%;
+    padding-right: 5.7px;
     overflow: hidden;
     /* padding-bottom: 144px; */
 }
@@ -406,23 +407,21 @@
 .trends {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 5px;
+    gap: 0.23%;
 }
 
-/*нужно масштабировать картинки*/
 .trends-card {
     display: flex;
     justify-content: center;
     align-items: end;
-    box-sizing: border-box;
+    box-sizing: content-box;
     width: 100%;
-    /*при масштабировании картинки не масштабируются*/
-    height: 319px;
+    min-height: 319px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    /* background-size: cover; */
     background-color: #000000;
     position: relative;
     z-index: 0;
@@ -437,10 +436,6 @@
     left: 0;
     background-color: #000000;
     opacity: 0.6;
-}
-
-.trends-card:nth-of-type(n+2) {
-    margin-left: 5px;
 }
 
 .trends-cover1 {
@@ -465,26 +460,33 @@
     background-color: rgba(0, 0, 0, 0);
     border: 3px solid #b59f5b;
     z-index: 1;
-    margin: 5%;
-    padding: 5%;
-    padding-top: 10%;
-    max-height: 319px;
+    margin: 0 5% 4%;
+    padding: 8% 9% 8% 8%;
+    /* max-height: 319px; */
 }
+
+.container-padding {
+    padding-right: 0;
+}
+
+
+
 
 /*основные статьи*/
 .page-content {
     display: flex;
     /*aside-bar сбоку*/
     flex-wrap: nowrap;
-    width: 1200px;
+    max-width: 1200px;
+    /* width: 100%; */
     margin: auto;
-    padding: 40px 15px 60px;
+    padding: 40px 15px 43px;
     background-color: #ffffff;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .posts {
-    width: 778px;
+    max-width: 778px;
 }
 
 .post-img {
@@ -495,38 +497,44 @@
 
 .post-header {
     display: flex;
-    margin-top: 35px;
+    margin-top: 28px;
 }
 
 .autor {
     display: block;
     font-size: 12px;
-    line-height: 40px;
+    line-height: 45px;
     color: black;
     font-weight: 700;
-    margin-top: -12px;
+    margin-top: -13px;
+    margin-left: -5px;
 }
 
 .post-content {
     width: 367px;
-    height: 62px;
+    min-height: 62px;
+    height: fit-content;
     font-size: 15px;
     line-height: 22px;
     color: #0f0d0e;
     font-weight: 400;
-    margin-top: 35px;
-    overflow: hidden;
+    margin-top: 31px;
 }
 
 .mainpost-margin {
-    margin-top: 55px;
+    margin-top: 60px;
+}
+
+.between-paragraphs {
+    margin-bottom: 10px;
 }
 
 /* сбоку */
 .sidebar {
     display: flex;
     flex-direction: column;
-    width: 270px;
+    max-width: 270px;
+    margin-left: 121px;
 }
 
 .aside-img {
@@ -535,8 +543,12 @@
     background-color: #f4f7f6;
 }
 
+.articlebox-aside {
+    margin-left: 18px;
+}
+
 .title-aside {
-    width: 180px;
+    min-width: 200px;
     font-size: 14px;
     line-height: 18px;
     color: #000000;
@@ -547,14 +559,18 @@
     cursor: pointer;
 }
 
+.post-aside {
+    margin-top: 22px;
+}
+
 .sidepost-margin {
     margin-top: 30px;
 }
 
 /* кнопки */
 .search {
-    margin-top: 68px;
-    margin-bottom: 40px;
+    margin-top: 61px;
+    margin-bottom: 42px;
     display: flex;
     width: 100%;
 }
@@ -595,6 +611,7 @@
 .email {
     margin-top: 30px;
 }
+
 .email-field {
     width: 270px;
     height: 48px;
@@ -604,7 +621,7 @@
     font-weight: 400;
     border: none;
     box-sizing: border-box;
-    padding: 18px 149px 17px 18px;
+    padding: 7px 149px 17px 18px;
 }
 
 .email-field:focus {
@@ -619,8 +636,7 @@
     display: flex;
     gap: 6px;
     list-style-type: none;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 25px 2px 42px 0;
     align-items: center;
 }
 
@@ -631,7 +647,7 @@
 
 .tag-list {
     border: 3px solid #eeeeee;
-    padding: 7px 13px;
+    padding: 5px 14px;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
@@ -647,7 +663,7 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 11px;
+    gap: 12px;
     align-items: flex-start;
     margin-top: 25px;
 }
@@ -659,6 +675,7 @@
     padding-bottom: 15px;
     font-weight: 700;
     align-items: flex-start;
+    width: 250px;
 }
 
 .topic-link {
@@ -681,13 +698,13 @@
 /* товары */
 .footer-box {
     margin: 30px auto 0;
-    width: 1170px;
+    max-width: 1170px;
 }
 
 .products {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -708,7 +725,7 @@
     height: 267px;
     border: 3px solid #b59f5b;
     z-index: 0;
-    margin-top: -35px;
+    margin-top: -30px;
 }
 
 .product-img {
@@ -726,10 +743,9 @@
 }
 
 .product-description {
-    width: 301px;
-    height: 63px;
+    /* width: 301px; */
     font-size: 15px;
-    line-height: 22px;
+    line-height: 24px;
     color: #0f0d0e;
     font-weight: 400;
     text-align: start;
@@ -774,7 +790,7 @@
 .product-content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    margin-top: 20px;
 }
 
 .product-footer {
@@ -786,6 +802,7 @@
 
 .product-prices {
     display: block;
+    margin-bottom: 8px;
 }
 
 .product-button {
@@ -817,12 +834,10 @@
     justify-content: center;
     background-color: #f4f7f6;
     padding: 30px 0;
-    gap: 30px;
+    gap: 25px;
     align-items: flex-start;
-    width: 1130px;
+    max-width: 1170px;
     height: 83px;
-    margin-left: 20px;
-    overflow: hidden;
 }
 
 .social-list {
@@ -851,11 +866,934 @@
 }
 
 .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
     font-size: 12px;
     color: #999999;
     font-weight: 700;
-    margin-top: 67px;
-    text-align: center;
-    padding: 0 0 40px;
-    overflow: hidden;
+    padding-left: 9px;
+}
+
+/* mobile */
+@media (max-width: 640px) and (orientation: portrait) {
+    .header {
+        max-width: 640px;
+        min-height: 637px;
+        background-image: url("../images/banner-mobile.jpg");
+        margin-bottom: 40px;
+    }
+
+    .header-container {
+        align-items: start;
+        margin-right: 0;
+        margin-left: 13%;
+    }
+
+    .logo {
+        width: 268px;
+        margin: 200px auto 0;
+        display: block;
+    }
+
+    .header-title {
+        width: 328px;
+        font-size: 26px;
+        line-height: 1.384;
+        text-align: center;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-right: 20px;
+        width: 23px;
+        height: 18px;
+    }
+
+    .burger-menu-line {
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
+    }
+
+    .title {
+        margin-left: -3px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .title-font {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .trends {
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+
+    .trends-container {
+        padding-left: 5%;
+    }
+
+    .trends-card {
+        min-height: 231px;
+        margin-bottom: 4px;
+    }
+
+    .trendscard-margin {
+        margin-left: 0;
+    }
+
+    .posts-title {
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 0;
+    }
+
+    .title-1 {
+        padding-right: 60px;
+    }
+
+    .page-content {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-top: 18px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .mainpost-margin {
+        margin-top: 37px;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    .post-header {
+        margin-top: 17px;
+    }
+
+    .post-img {
+        width: 328px;
+        height: 253px;
+    }
+
+    .post-date {
+        margin-right: 15px;
+    }
+
+    .post-content {
+        width: 327px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 0;
+        margin-left: -1px;
+    }
+
+    .between-paragraphs {
+        margin-bottom: 6px;
+    }
+
+    .post-content::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 3px;
+        background-color: #eeeeee;
+        margin-top: 20px;
+    }
+
+    .articlebox-main {
+        margin-left: -1px;
+        margin-top: 8px;
+    }
+
+    .sidebar {
+        margin-left: 0;
+        max-width: unset;
+    }
+
+    .post-aside {
+        flex-direction: row;
+    }
+
+    .field {
+        width: 281px;
+    }
+
+    .email {
+        margin-top: 25px;
+    }
+
+    .email-field {
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 19px;
+    }
+
+    .aside-submit {
+        margin-top: 17px;
+    }
+
+    .submit-button {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .tag {
+        gap: 5px;
+        margin: 25px 0 -2px 0;
+    }
+
+    .title-margin {
+        margin-top: -5px;
+    }
+
+    .title::after {
+        margin-top: 8px;
+    }
+    
+    .products {
+        flex-direction: column;
+    }
+
+    .product {
+        margin-top: 253px;
+        width: 330px;
+        padding-bottom: 25px;
+    }
+
+    .product-box {
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 285px;
+        position: unset;
+        margin-bottom: 213px;
+        padding-left: 20px;
+        padding-right: 22px;
+        padding-bottom: 26px;
+    }
+
+    .product-img {
+        display: none;
+    }
+
+    .product-image1 {
+        background-image: url(../images/shop-item-mobile1.jpg);
+    }
+
+    .product-image2 {
+        background-image: url(../images/shop-item-mobile2.jpg);
+    }
+
+    .product-image3 {
+        background-image: url(../images/shop-item-mobile3.jpg);
+        margin-top: 40px;
+    }
+
+    .product-name {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .product-description {
+        margin-left: -2px;
+        margin-top: 2px;
+        line-height: 22px;
+    }
+
+    .footer {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        width: 92%;
+    }
+
+    .copyright {
+        margin-top: -20px;
+    }
+
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-right: 20px;
+        width: 23px;
+        height: 18px;
+    }
+
+    .burger-menu-line {
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
+    }
+    
+    .trends {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .trends-card {
+        width: 49%;
+        justify-content: space-between;
+    }
+
+    .trendscard-margin {
+        margin-left: 0;
+    }
+
+    .page-content {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-top: 18px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .mainpost-margin {
+        margin-top: 37px;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    .post-header {
+        margin-top: 17px;
+    }
+
+    .post-img {
+        width: 328px;
+        height: 253px;
+    }
+
+    .post-date {
+        margin-right: 15px;
+    }
+
+    .post-content {
+        width: 327px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 0;
+        margin-left: -1px;
+    }
+
+    .between-paragraphs {
+        margin-bottom: 6px;
+    }
+
+    .post-content::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 3px;
+        background-color: #eeeeee;
+        margin-top: 20px;
+    }
+
+    .articlebox-main {
+        margin-left: -1px;
+        margin-top: 8px;
+    }
+
+    .sidebar {
+        margin-left: 0;
+        max-width: unset;
+    }
+
+    .post-aside {
+        flex-direction: row;
+    }
+
+    .field {
+        width: 281px;
+    }
+
+    .email {
+        margin-top: 25px;
+    }
+
+    .email-field {
+        padding-top: 15px;
+        padding-left: 19px;
+    }
+
+    .aside-submit {
+        margin-top: 17px;
+    }
+
+    .submit-button {
+        margin-bottom: 0;
+    }
+
+    .tag {
+        gap: 5px;
+        margin: 25px 0 -2px 0;
+        max-width: 90%;
+    }
+
+    .title-margin {
+        margin-top: -5px;
+    }
+
+    .title::after {
+        margin-top: 8px;
+    }
+    
+    .products {
+        flex-direction: column;
+    }
+
+    .product {
+        margin-top: 253px;
+        width: 330px;
+        padding-bottom: 25px;
+    }
+
+    .product-box {
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 285px;
+        position: unset;
+        margin-bottom: 213px;
+        padding-left: 20px;
+        padding-right: 22px;
+        padding-bottom: 26px;
+    }
+
+    .product-img {
+        display: none;
+    }
+
+    .product-image1 {
+        background-image: url(../images/shop-item-mobile1.jpg);
+    }
+
+    .product-image2 {
+        background-image: url(../images/shop-item-mobile2.jpg);
+    }
+
+    .product-image3 {
+        background-image: url(../images/shop-item-mobile3.jpg);
+        margin-top: 40px;
+    }
+
+    .product-name {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .product-description {
+        margin-left: -2px;
+        margin-top: 2px;
+        line-height: 22px;
+    }
+
+    .footer {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        width: 92%;
+    }
+
+    .copyright {
+        margin-top: -20px;
+    }
+
+}
+
+/* tablet */
+@media (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .header {
+        background-image: url(../images/banner-bg-tablet.jpg);
+        padding-top: 25px;
+        height: 390px;
+        margin-bottom: 45px;
+        padding-right: 5px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .header-title {
+        font-size: 40px;
+        line-height: 55px;
+        padding-top: 12%;
+        padding-left: 3px;
+        padding-right: 0;
+        max-width: 650px;
+    }
+
+    .header-container {
+        margin-top: 17px;
+        margin-left: 34px;
+        margin-right: 2%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-right: 20px;
+        width: 23px;
+        height: 18px;
+    }
+
+    .burger-menu-line {
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
+    }
+
+    .page-content {
+        padding-top: 27px;
+        padding-bottom: 25px;
+    }
+
+    .title {
+        margin-right: 6px;
+    }
+
+    .title-font {
+        font-size: 18px;
+    }
+
+    .title:after {
+        margin: 10px auto 0;
+    }
+
+    .title-margin {
+        margin-right: 15px;
+    }
+
+    .trends {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        gap: 4px;
+        /* width: 640px; */
+    }
+
+    .trends-card {
+        max-width: 49.69%;
+        min-height: 245px;
+    }
+
+    .trendscard-margin {
+        margin-left: 0;
+    }
+
+    .posts-title {
+        font-size: 17px;
+        line-height: 22px;
+        max-width: 395px;
+        padding-right: 0;
+        margin-top: 7px;        
+    }
+
+    .container-padding {
+        padding-right: 9%;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    .post::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 3px;
+        background-color: #eeeeee;
+        margin-top: 18px;
+    }
+
+    .post-img {
+        width: 392px;
+        height: 302px;
+        margin-bottom: 15px;
+    }
+
+    .post-content {
+        margin-top: 15px;
+        width: 392px;
+    }
+
+    .mainpost-margin {
+        margin-top: 42px;
+    }
+
+    .article-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .articlebox-aside {
+        padding-left: 16px;
+    }
+
+    .sidebar {
+        margin-left: 40px;
+    }
+
+    .title-aside {
+        margin-left: 4px;
+        margin-top: -4px;
+    }
+
+    .post-aside {
+        flex-direction: row;
+    }
+
+    .aside-img {
+        margin-left: -2px;
+        width: 66px;
+    }    
+
+    .search {
+        margin-top: 60px;
+    }
+
+    .search-button {
+        margin-left: -5px;
+    }
+
+    .email {
+        margin-top: 22px;
+        margin-left: -5px;
+    }
+
+    .email-field {
+        font-size: 13.5px;
+        padding-top: 14px;
+    }
+
+    .field {
+        padding-left: 11px;
+    }
+
+    .submit-button {
+        margin-bottom: 45px;
+    }
+
+    .tag {
+        margin-bottom: 40px;
+        margin-top: 24px;
+    }
+
+    .topics {
+        margin-top: 24px;
+        margin-left: -5px;
+    }
+
+    .products {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 22px;
+    }
+
+    .product {
+        margin-left: 5px;
+        height: 265px;
+        padding-left: 18px;
+        width: 335px;
+    }
+
+    .product-size {
+        height: 243px;
+        margin-top: -33px;
+        padding-top: 54px;
+    }
+
+    .product-name {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .product-img {
+        width: 292px;
+        height: 226px;
+    }
+
+    .img1 {
+        background-image: url(../images/shop-item-tablet1.jpg);
+    }
+
+    .img2 {
+        background-image: url(../images/shop-item-tablet2.jpg);
+    }
+
+    .img3 {
+        background-image: url(../images/shop-item-tablet3.jpg);
+    }
+   
+    .footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-box {
+        margin-left: 4%;
+        margin-top: 27px;
+    }
+
+    .social {
+        align-items: center;
+        width: 700px;
+        margin-left: 0;
+        padding-left: 13px;
+        gap: 27px;
+    }
+
+    .copyright {
+        min-height: 115px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1200px) and (orientation: landscape) {
+    
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-right: 20px;
+        width: 23px;
+        height: 18px;
+    }
+
+    .burger-menu-line {
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
+    }
+    
+    .posts {
+        margin-left: 50px;
+    }
+
+    .posts-title {
+        font-size: 17px;
+        line-height: 22px;
+        max-width: 395px;
+        padding-right: 0;
+        margin-top: 7px;        
+    }
+
+    .container-padding {
+        padding-right: 9%;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    .post::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 3px;
+        background-color: #eeeeee;
+        margin-top: 18px;
+    }
+
+    .post-img {
+        width: 392px;
+        height: 302px;
+        margin-bottom: 15px;
+    }
+
+    .post-content {
+        margin-top: 15px;
+        width: 392px;
+    }
+
+    .mainpost-margin {
+        margin-top: 42px;
+    }
+
+    .article-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .articlebox-aside {
+        padding-left: 16px;
+    }
+
+    .sidebar {
+        margin-left: 3%;
+    }
+
+    .title-aside {
+        margin-left: 4px;
+        margin-top: -4px;
+    }
+
+    .post-aside {
+        flex-direction: row;
+    }
+
+    .aside-img {
+        margin-left: -2px;
+        width: 66px;
+    }
+    
+    .sidepost-margin::after {
+        display: none;
+    }
+
+    .search {
+        margin-top: 60px;
+    }
+
+    .search-button {
+        margin-left: -5px;
+    }
+
+    .email {
+        margin-top: 22px;
+        margin-left: -5px;
+    }
+
+    .email-field {
+        font-size: 13.5px;
+        padding-top: 14px;
+    }
+
+    .field {
+        padding-left: 11px;
+    }
+
+    .submit-button {
+        margin-bottom: 45px;
+    }
+
+    .tag {
+        margin-bottom: 40px;
+        margin-top: 24px;
+    }
+
+    .topics {
+        margin-top: 24px;
+        margin-left: -5px;
+    }
+
+    .products {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 22px;
+    }
+
+    .product {
+        margin-left: 5px;
+        height: 265px;
+        padding-left: 18px;
+        width: 335px;
+    }
+
+    .product-size {
+        height: 243px;
+        margin-top: -33px;
+        padding-top: 54px;
+    }
+
+    .product-name {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .product-img {
+        width: 292px;
+        height: 226px;
+    }
+
+    .img1 {
+        background-image: url(../images/shop-item-tablet1.jpg);
+    }
+
+    .img2 {
+        background-image: url(../images/shop-item-tablet2.jpg);
+    }
+
+    .img3 {
+        background-image: url(../images/shop-item-tablet3.jpg);
+    }
+   
+    .footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-box {
+        margin-left: 4%;
+        margin-top: 27px;
+    }
+
+    .social {
+        align-items: center;
+        width: 700px;
+        margin-left: 0;
+        padding-left: 13px;
+        gap: 27px;
+    }
+
+    .copyright {
+        min-height: 115px;
+        padding-right: 30px;
+    }
+}
+
 }
