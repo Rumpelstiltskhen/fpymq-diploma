@@ -53,6 +53,11 @@
     <header class="header">
         <div class="header-container">
             <a class="logo" href="#0"><img src="svg/noemi-logo.svg" alt="NOEMI"></a>
+            <div class="burger-menu">
+                <div class="burger-menu-line"></div>
+                <div class="burger-menu-line"></div>
+                <div class="burger-menu-line"></div>
+            </div>
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-list-item">
@@ -76,7 +81,7 @@
                 </ul>
             </nav>
         </div>
-        <h1 class="header-title">блог о творчестве, спорте и образе жизни</h1>
+        <h1 class="header-title">блог о творчестве, спорте, и образе жизни</h1>
     </header>
 
     <!-- тренды -->
@@ -94,14 +99,14 @@
                         </li>
                     </ul>
                 </div>
-                <a class="posts-title" href="#0">
+                <a class="posts-title posts-margin title-1" href="#0">
                     <h4>Сейчас в тренде: сад на подоконнике</h4>
                 </a>
             </div>
         </article>
 
         <article class="trends-card trends-cover2">
-            <div class="trends-container">
+            <div class="trends-container container-padding">
                 <div class="trends-menu">
                     <ul class="categories">
                         <li class="category">
@@ -135,7 +140,7 @@
         </article>
 
         <article class="trends-card trends-cover4">
-            <div class="trends-container">
+            <div class="trends-container container-padding">
                 <div class="trends-menu">
                     <ul class="categories">
                         <li class="category">
@@ -159,7 +164,7 @@
         <main class="posts">
             <div class="post">
                 <img src="images/last-post1.jpg" class="post-img" alt="пляж">
-                <div class="article-box">
+                <div class="article-box articlebox-main">
                     <ul class="categories">
                         <li class="category">
                             <a class="category-link" href="#0">Travel</a>
@@ -181,7 +186,7 @@
                         </div>
                         <div class="post-content">
                             <p>Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны
-                                города..
+                                города...
                                 Музеи еще закрыты. Что посмотреть?</p>
                         </div>
                     </article>
@@ -190,7 +195,7 @@
 
             <div class="post mainpost-margin">
                 <img src="images/last-post2.jpg" class="post-img" alt="йога">
-                <div class="article-box">
+                <div class="article-box articlebox-main">
                     <ul class="categories">
                         <li class="category">
                             <a class="category-link" href="#0">Health</a>
@@ -219,7 +224,7 @@
 
             <div class="post mainpost-margin">
                 <img src="images/last-post3.jpg" class="post-img" alt="девушка">
-                <div class="article-box">
+                <div class="article-box articlebox-main">
                     <ul class="categories">
                         <li class="category">
                             <a class="category-link" href="#0">Music</a>
@@ -236,7 +241,7 @@
                             <span class="autor">Неизвестный автор</span>
                         </div>
                         <div class="post-content">
-                            <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою
+                            <p class="between-paragraphs">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою
                                 палатку?</p>
                             <p>Мы составили список лучших летних фестивалей по всему миру.</p>
                         </div>
@@ -246,7 +251,7 @@
 
             <div class="post mainpost-margin">
                 <img src="images/last-post4.jpg" class="post-img" alt="сервированный стол">
-                <div class="article-box">
+                <div class="article-box articlebox-main">
                     <ul class="categories">
                         <li class="category">
                             <a class="category-link" href="#0">Lifestyle</a>
@@ -274,7 +279,7 @@
 
             <div class="post mainpost-margin">
                 <img src="images/last-post5.jpg" class="post-img" alt="подушечка">
-                <div class="article-box">
+                <div class="article-box articlebox-main">
                     <ul class="categories">
                         <li class="category">
                             <a class="category-link" href="#0">Lifestyle</a>
@@ -309,9 +314,9 @@
         <!-- с боку -->
         <aside class="sidebar">
             <h3 class="title">Новые посты</h3>
-            <div class="post sidepost-margin">
+            <div class="post post-aside sidepost-margin">
                 <img src="images/2.jpg" class="aside-img" alt="пляж">
-                <article class="article-box">
+                <article class="article-box articlebox-aside">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
                     <a class="posts-title">
                         <h5 class="title-aside">10 мест, ради которых стоит проснуться</h5>
@@ -319,9 +324,9 @@
                 </article>
             </div>
 
-            <div class="post">
+            <div class="post post-aside">
                 <img src="images/151.jpg" class="aside-img" alt="йога">
-                <article class="article-box">
+                <article class="article-box articlebox-aside">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
                     <a class="posts-title">
                         <h5 class="title-aside">Йога для домашних</h5>
@@ -329,9 +334,9 @@
                 </article>
             </div>
 
-            <div class="post">
+            <div class="post post-aside">
                 <img src="images/45.jpg" class="aside-img" alt="комната">
-                <article class="article-box">
+                <article class="article-box articlebox-aside">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
                     <a class="posts-title">
                         <h5 class="title-aside">Как мы превратили классное место в балкон</h5>
@@ -339,9 +344,9 @@
                 </article>
             </div>
 
-            <div class="post">
+            <div class="post post-aside">
                 <img src="images/501.jpg" class="aside-img" alt="кухня">
-                <article class="article-box">
+                <article class="article-box articlebox-aside">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
                     <a class="posts-title">
                         <h5 class="title-aside">Кулинарный подход к науке</h5>
@@ -349,9 +354,9 @@
                 </article>
             </div>
 
-            <div class="post">
+            <div class="post post-aside">
                 <img src="images/7.jpg" class="aside-img" alt="прическа">
-                <article class="article-box">
+                <article class="article-box articlebox-aside">
                     <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
                     <a class="posts-title">
                         <h5 class="title-aside">Лучшие прически для распущеных волос</h5>
@@ -369,7 +374,7 @@
             </form>
 
             <!-- почта -->
-            <h3 class="title">Рассылка</h3>
+            <h3 class="title title-margin">Рассылка</h3>
             <form class="email">
                 <label class="email-group">
                     <span class="visually-hidden">ваша почта</span>
@@ -428,8 +433,8 @@
     <h2 class="title title-font">Наши изделия</h2>
     <div class="footer-box">
         <div class="products">
-            <article class="product-box">
-                <img src="images/shop-item-desk1.jpg" class="product-img" alt="подушка">
+            <article class="product-box product-image1">
+                <img src="images/shop-item-desk1.jpg" class="product-img img1" alt="подушка">
                 <div class="product">
                     <header class="product-header">
                         <h3 class="product-name"> Подушки на диван</h3>
@@ -448,8 +453,8 @@
                 </div>
             </article>
 
-            <article class="product-box">
-                <img src="images/shop-item-desk2.jpg" class="product-img" alt="кукла">
+            <article class="product-box product-image2">
+                <img src="images/shop-item-desk2.jpg" class="product-img img2" alt="кукла">
                 <div class="product">
                     <header class="product-header">
                         <h3 class="product-name">Кукла «Зайчик»</h3>
@@ -469,9 +474,9 @@
                 </div>
             </article>
 
-            <article class="product-box">
-                <img src="images/shop-item-desk3.jpg" class="product-img" alt="рамка">
-                <div class="product">
+            <article class="product-box product-image3">
+                <img src="images/shop-item-desk3.jpg" class="product-img img3" alt="рамка">
+                <div class="product product-size">
                     <header class="product-header">
                         <h3 class="product-name">Шестиугольная рамка</h3>
                         <p class="product-description">Необычная рамка для украшения дома из видео
