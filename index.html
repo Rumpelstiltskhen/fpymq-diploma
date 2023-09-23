@@ -11,11 +11,12 @@
 <body class="page-elements">
 
     <!-- popup -->
+    <div class="hidden">
     <input type="checkbox" hidden id="popup1" class="popup-toggle" checked>
     <form class="popup">
         <div class="popup-content">
             <label for="popup1" class="popup-close">&times;</label>
-            <h2 class="title title-font">Ваш фидбек</h2>
+            <h2 class="title title-popup">Ваш фидбек</h2>
 
             <!-- выпадающий список -->
             <label class="select-group">
@@ -48,6 +49,7 @@
             <button class="submit-button popup-submit">Отправить</button>
 
         </div>
+    </div>
     </form>
 
     <header class="header">
@@ -370,8 +372,8 @@
                 <label class="search-group">
                     <span class="visually-hidden">Поле ввода</span>
                     <input class="field" placeholder="Найти...">
+                    <button class="search-button"><span class="visually-hidden">Кнопка поиска</span></button>
                 </label>
-                <button class="search-button"><span class="visually-hidden">Кнопка поиска</span></button>
             </form>
 
             <!-- почта -->
