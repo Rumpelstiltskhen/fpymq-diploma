@@ -160,12 +160,6 @@
     background-color: #323232;
 }
 
-.popup-submit {
-    width: 330px;
-}
-
-
-
 /* стили страницы */
 .page-elements {
     font-family: "opensans", "arial", "sans-serif";
@@ -173,6 +167,10 @@
 }
 
 /* popup */
+/* .hidden {
+    display: none;
+} */
+
 .popup {
     position: fixed;
     width: 100%;
@@ -181,10 +179,18 @@
     top: 0;
     display: none;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background-color: rgba(0, 0, 0, 0.6);
     overflow-y: auto;
     z-index: 5;
+    padding-top: 14%;
+}
+
+.title-popup {
+    margin-left: -7%;
+    margin-top: 5%;
+    font-size: 18px;
+    line-height: 29px;
 }
 
 .popup-toggle:checked+.popup {
@@ -304,6 +310,10 @@
     outline: none;
 }
 
+.popup-submit {
+    width: 330px;
+}
+
 .popup-close {
     position: absolute;
     color: white;
@@ -327,7 +337,6 @@
     position: relative;
     z-index: 0;
     padding-top: 28px;
-    /* width: 1660px; */
     height: 450px;
     margin-bottom: 55px;
 }
@@ -400,7 +409,6 @@
     padding-top: 6.6%;
     padding-right: 5.7px;
     overflow: hidden;
-    /* padding-bottom: 144px; */
 }
 
 /* Тренды */
@@ -421,7 +429,7 @@
     min-height: 319px;
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-size: cover; */
+    background-size: cover;
     background-color: #000000;
     position: relative;
     z-index: 0;
@@ -468,9 +476,6 @@
 .container-padding {
     padding-right: 0;
 }
-
-
-
 
 /*основные статьи*/
 .page-content {
@@ -588,8 +593,12 @@
 .field:focus {
     border: 1px solid #b59f5b;
     outline: none;
-    width: 222px;
-    height: 48px;
+    width: 100%
+}
+
+.search-group {
+    display: flex;
+    flex-direction: row;
 }
 
 .search-button {
@@ -675,7 +684,7 @@
     padding-bottom: 15px;
     font-weight: 700;
     align-items: flex-start;
-    width: 250px;
+    max-width: 250px;
 }
 
 .topic-link {
@@ -721,7 +730,7 @@
     padding: 50px 20px;
     display: flex;
     flex-direction: column;
-    width: 347px;
+    max-width: 347px;
     height: 267px;
     border: 3px solid #b59f5b;
     z-index: 0;
@@ -878,7 +887,14 @@
 
 /* mobile */
 @media (max-width: 640px) and (orientation: portrait) {
+    .popup {
+        padding-top: 11%;
+    }
+
     .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         max-width: 640px;
         min-height: 637px;
         background-image: url("../images/banner-mobile.jpg");
@@ -887,23 +903,24 @@
 
     .header-container {
         align-items: start;
-        margin-right: 0;
-        margin-left: 13%;
+        /* margin-right: 0;
+        margin-left: 13%; */
+        justify-content: center;
     }
 
     .logo {
         width: 268px;
-        margin: 200px auto 0;
+        margin-top: 200px;
         display: block;
     }
 
     .header-title {
-        width: 328px;
-        font-size: 26px;
+        max-width: 300px;
+        font-size: 1.5em;
         line-height: 1.384;
         text-align: center;
         margin-top: 35px;
-        margin-left: 20px;
+        margin-left: auto;
     }
 
     .menu {
@@ -915,7 +932,7 @@
         flex-direction: column;
         justify-content: space-between;
         margin-top: 5px;
-        margin-right: 20px;
+        margin-right: -35px;
         width: 23px;
         height: 18px;
     }
@@ -968,14 +985,13 @@
 
     .page-content {
         flex-wrap: wrap;
-        justify-content: flex-start;
         padding-top: 18px;
         margin-bottom: 0;
         padding-bottom: 0;
     }
 
     .mainpost-margin {
-        margin-top: 37px;
+        margin-top: 40px;
     }
 
     .post {
@@ -987,8 +1003,9 @@
     }
 
     .post-img {
-        width: 328px;
-        height: 253px;
+        margin-top: -2px;
+        width: 100%;
+        height: 100%;
     }
 
     .post-date {
@@ -996,7 +1013,7 @@
     }
 
     .post-content {
-        width: 327px;
+        width: unset;
         font-size: 14px;
         line-height: 20px;
         margin-top: 0;
@@ -1024,15 +1041,24 @@
 
     .sidebar {
         margin-left: 0;
-        max-width: unset;
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .title-aside {
+        min-width: unset;
     }
 
     .post-aside {
         flex-direction: row;
     }
 
+    .search-group {
+        width: 100%;
+    }
+
     .field {
-        width: 281px;
+        width: 100%;
     }
 
     .email {
@@ -1073,7 +1099,7 @@
 
     .product {
         margin-top: 253px;
-        width: 330px;
+        max-width: 330px;
         padding-bottom: 25px;
     }
 
@@ -1134,6 +1160,9 @@
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
+    .popup {
+        padding-top: 11%;
+    }
 
     .menu {
         display: none;
@@ -1255,6 +1284,7 @@
 
     .submit-button {
         margin-bottom: 0;
+        padding: 0;
     }
 
     .tag {
@@ -1337,8 +1367,86 @@
 
 }
 
+@media (max-width: 300px) {
+    .header-title {
+        word-break: break-all;
+    }
+
+    .header {
+        min-height: 100%;
+    }
+
+    .logo {
+        margin-top: 50%;
+        max-width: 100%;
+    }
+
+    .title-1 {
+        padding-right: 0;
+    }
+
+    .page-content {
+        padding: 0;
+        padding-left: 3%;
+    }
+
+    .posts {
+        max-width: 100%;
+    }
+
+    .post-header {
+        margin-top: 3%;
+    }
+
+    .title-aside {
+        word-break: break-all;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .autor {
+        line-height: normal;
+        margin-top: 0;
+    }
+
+    .submit-button {
+        padding: 0;
+    }
+
+    .product-box {
+        padding: 0;
+    }
+
+    .product-image1 {
+        margin-left: 3%;
+    }
+
+    .product-image2 {
+        margin-left: 3%;
+    }
+
+    .product-image3 {
+        margin-left: 3%;
+    }
+
+    .product {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .social {
+        margin-top: 20%;
+    }
+}
+
 /* tablet */
 @media (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .popup {
+        padding-top: 30%;
+    }
+
     .header {
         background-image: url(../images/banner-bg-tablet.jpg);
         padding-top: 25px;
@@ -1531,7 +1639,11 @@
     .products {
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 22px;
+        /* gap: 22px; */
+    }
+
+    .product-box {
+        margin-left: 4%;
     }
 
     .product {
@@ -1539,6 +1651,7 @@
         height: 265px;
         padding-left: 18px;
         width: 335px;
+        margin-bottom: 7%;
     }
 
     .product-size {
@@ -1577,7 +1690,8 @@
     }
 
     .footer-box {
-        margin-left: 4%;
+        /* margin-left: 4%; */
+        max-width: 100%;
         margin-top: 27px;
     }
 
@@ -1596,6 +1710,9 @@
 }
 
 @media (min-width: 640px) and (max-width: 1200px) and (orientation: landscape) {
+    .popup {
+        padding-top: 30%;
+    }
 
     .menu {
         display: none;
